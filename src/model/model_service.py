@@ -1,6 +1,5 @@
 import logging
 
-import pandas as pd
 from flask import Flask, jsonify, request
 from train import AcademicStressPredictor
 

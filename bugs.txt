@@ -1,0 +1,1986 @@
+× docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: failed (Result: exit-code) since Sat 2025-09-20 20:12:58 PKT; 1min 2s ago
+TriggeredBy: × docker.socket
+       Docs: https://docs.docker.com
+    Process: 49965 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock (code=exited, status=1/FAILURE)
+   Main PID: 49965 (code=exited, status=1/FAILURE)
+        CPU: 137ms
+
+Sep 20 20:12:58 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+Sep 20 20:12:58 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+Sep 20 20:12:58 sanaan-linux systemd[1]: docker.service: Start request repeated too quickly.
+Sep 20 20:12:58 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+Sep 20 20:12:58 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+Sep 20 20:13:39 sanaan-linux systemd[1]: docker.service: Start request repeated too quickly.
+Sep 20 20:13:39 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+Sep 20 20:13:39 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+Sep 13 17:46:45 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 3890.
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.241815827+05:00" level=info msg="Starting up"
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.242646644+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.242766882+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.242780728+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.242881825+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.299525356+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.373703104+05:00" level=info msg="Loading containers: start."
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.625949508+05:00" level=info msg="Loading containers: done."
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.650575946+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.650697911+05:00" level=info msg="Initializing buildkit"
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.669400992+05:00" level=info msg="Completed buildkit initialization"
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.673289907+05:00" level=info msg="Daemon has completed initialization"
+Sep 13 17:46:45 sanaan-linux dockerd[16935]: time="2025-09-13T17:46:45.673358864+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 13 17:46:45 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 3890.
+Sep 13 18:39:42 sanaan-linux dockerd[16935]: time="2025-09-13T18:39:42.016220015+05:00" level=info msg="ignoring event" container=1b8c6b6854136f016377639480e51ad18eb15bd26528870efda045174ab1e452 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 13 18:44:01 sanaan-linux dockerd[16935]: time="2025-09-13T18:44:01.670815017+05:00" level=info msg="ignoring event" container=cf0998bafbcd5f57e479520c94259772fe02203514a51b3282d532168541231a module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 13 18:47:53 sanaan-linux dockerd[16935]: time="2025-09-13T18:47:53.047546847+05:00" level=info msg="ignoring event" container=d005777a49da52993da52b82ab3deedfeae69a647be301882ca3afd2ca6f34cb module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 13 19:44:51 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 5551.
+Sep 13 19:44:51 sanaan-linux dockerd[16935]: time="2025-09-13T19:44:51.965197271+05:00" level=info msg="Processing signal 'terminated'"
+Sep 13 19:44:54 sanaan-linux dockerd[16935]: time="2025-09-13T19:44:54.153829452+05:00" level=info msg="ignoring event" container=01e3935235ef506fcf6ae2fa71fa4697543f53693785f7d82400a473cd52abfd module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 13 19:44:54 sanaan-linux dockerd[16935]: time="2025-09-13T19:44:54.305693512+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 13 19:44:54 sanaan-linux dockerd[16935]: time="2025-09-13T19:44:54.306440457+05:00" level=info msg="Daemon shutdown complete"
+Sep 13 19:44:54 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 13 19:44:54 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 5551 and the job result is done.
+Sep 13 19:44:54 sanaan-linux systemd[1]: docker.service: Consumed 50.544s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot d938e12334b84ef2a0c0d265ed4fd5ff --
+Sep 14 00:54:26 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 139.
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.355426047+05:00" level=info msg="Starting up"
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.357233608+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.357931612+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.357941523+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.358296573+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.404326292+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.452144439+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.466453818+05:00" level=info msg="Loading containers: start."
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.767527313+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 80a04ca32815d6d76d12171fa2666c14f38c8b7dd65467f48e9a53e30cf4aa2d], retrying...."
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.792390811+05:00" level=info msg="Loading containers: done."
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.810656220+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.810902686+05:00" level=info msg="Initializing buildkit"
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.816709536+05:00" level=info msg="Completed buildkit initialization"
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.820533442+05:00" level=info msg="Daemon has completed initialization"
+Sep 14 00:54:26 sanaan-linux dockerd[1395]: time="2025-09-14T00:54:26.820587850+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 14 00:54:26 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 139.
+Sep 14 05:29:47 sanaan-linux dockerd[1395]: time="2025-09-14T05:29:47.001541519+05:00" level=info msg="Processing signal 'terminated'"
+Sep 14 05:29:47 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6287.
+Sep 14 05:29:47 sanaan-linux dockerd[1395]: time="2025-09-14T05:29:47.013392494+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 14 05:29:47 sanaan-linux dockerd[1395]: time="2025-09-14T05:29:47.014436208+05:00" level=info msg="Daemon shutdown complete"
+Sep 14 05:29:47 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 14 05:29:47 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6287 and the job result is done.
+Sep 14 05:29:47 sanaan-linux systemd[1]: docker.service: Consumed 2.577s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot 0f4603e76ce14b2cbceac8b467ded2e4 --
+Sep 14 14:10:17 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 158.
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.150556185+05:00" level=info msg="Starting up"
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.152019200+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.154158993+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.154172636+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.154577010+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.201919834+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.261704629+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.280362738+05:00" level=info msg="Loading containers: start."
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.657700224+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count d36fdbd95f6431a526a42647bf40e9c689ee54d7a0a56eb5dd1598b6a10e5059], retrying...."
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.682491143+05:00" level=info msg="Loading containers: done."
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.705366845+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.705612662+05:00" level=info msg="Initializing buildkit"
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.711731284+05:00" level=info msg="Completed buildkit initialization"
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.715155046+05:00" level=info msg="Daemon has completed initialization"
+Sep 14 14:10:18 sanaan-linux dockerd[1391]: time="2025-09-14T14:10:18.715192755+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 14 14:10:18 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 158.
+Sep 14 14:22:33 sanaan-linux dockerd[1391]: time="2025-09-14T14:22:33.346226784+05:00" level=error msg="Not continuing with pull after error" error="errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+Sep 14 14:22:33 sanaan-linux dockerd[1391]: time="2025-09-14T14:22:33.346335618+05:00" level=info msg="Ignoring extra error returned from registry" error="unauthorized: authentication required"
+Sep 14 14:59:38 sanaan-linux dockerd[1391]: time="2025-09-14T14:59:38.164708698+05:00" level=info msg="ignoring event" container=f45d54bf956ee3530c7bd97f2d363743f45ebbeea495c85541077c07c82c01ce module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 15 03:38:12 sanaan-linux dockerd[1391]: time="2025-09-15T03:38:12.535994389+05:00" level=info msg="Processing signal 'terminated'"
+Sep 15 03:38:12 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 8282.
+Sep 15 03:38:14 sanaan-linux dockerd[1391]: time="2025-09-15T03:38:14.555210551+05:00" level=info msg="ignoring event" container=c59688ab1edfcdb55855c65a5881410b7bb2c3b11cc705d28911ae013268dece module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 15 03:38:14 sanaan-linux dockerd[1391]: time="2025-09-15T03:38:14.693851364+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 15 03:38:14 sanaan-linux dockerd[1391]: time="2025-09-15T03:38:14.694019953+05:00" level=info msg="Daemon shutdown complete"
+Sep 15 03:38:14 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 15 03:38:14 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 8282 and the job result is done.
+Sep 15 03:38:14 sanaan-linux systemd[1]: docker.service: Consumed 8.509s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot fcddfa0e6be8488e8134714cac8752d2 --
+Sep 15 08:51:59 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 111.
+Sep 15 08:51:59 sanaan-linux dockerd[1371]: time="2025-09-15T08:51:59.779171287+05:00" level=info msg="Starting up"
+Sep 15 08:51:59 sanaan-linux dockerd[1371]: time="2025-09-15T08:51:59.781160432+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 15 08:51:59 sanaan-linux dockerd[1371]: time="2025-09-15T08:51:59.781857003+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 15 08:51:59 sanaan-linux dockerd[1371]: time="2025-09-15T08:51:59.781869486+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 15 08:51:59 sanaan-linux dockerd[1371]: time="2025-09-15T08:51:59.782278763+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 15 08:51:59 sanaan-linux dockerd[1371]: time="2025-09-15T08:51:59.830375370+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 15 08:51:59 sanaan-linux dockerd[1371]: time="2025-09-15T08:51:59.884393270+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 15 08:51:59 sanaan-linux dockerd[1371]: time="2025-09-15T08:51:59.898943777+05:00" level=info msg="Loading containers: start."
+Sep 15 08:52:00 sanaan-linux dockerd[1371]: time="2025-09-15T08:52:00.182563517+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count fb2b12eba5f62c0303654a6911151184fd5e4a4b8063717eed590fcd35d9eda9], retrying...."
+Sep 15 08:52:00 sanaan-linux dockerd[1371]: time="2025-09-15T08:52:00.211556830+05:00" level=info msg="Loading containers: done."
+Sep 15 08:52:00 sanaan-linux dockerd[1371]: time="2025-09-15T08:52:00.229738501+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 15 08:52:00 sanaan-linux dockerd[1371]: time="2025-09-15T08:52:00.229994534+05:00" level=info msg="Initializing buildkit"
+Sep 15 08:52:00 sanaan-linux dockerd[1371]: time="2025-09-15T08:52:00.235963689+05:00" level=info msg="Completed buildkit initialization"
+Sep 15 08:52:00 sanaan-linux dockerd[1371]: time="2025-09-15T08:52:00.239286688+05:00" level=info msg="Daemon has completed initialization"
+Sep 15 08:52:00 sanaan-linux dockerd[1371]: time="2025-09-15T08:52:00.239316862+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 15 08:52:00 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 111.
+Sep 15 09:10:17 sanaan-linux dockerd[1371]: time="2025-09-15T09:10:17.081529741+05:00" level=info msg="Processing signal 'terminated'"
+Sep 15 09:10:17 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 4623.
+Sep 15 09:10:17 sanaan-linux dockerd[1371]: time="2025-09-15T09:10:17.085333351+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 15 09:10:17 sanaan-linux dockerd[1371]: time="2025-09-15T09:10:17.085377006+05:00" level=info msg="Daemon shutdown complete"
+Sep 15 09:10:17 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 15 09:10:17 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 4623 and the job result is done.
+-- Boot 90ae548d3dc04840855647ede8440979 --
+Sep 15 09:13:04 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 131.
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.022500639+05:00" level=info msg="Starting up"
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.024353925+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.024997478+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.025009105+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.025344809+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.074127733+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.122273978+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.135379758+05:00" level=info msg="Loading containers: start."
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.422688327+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 3470e541119005410ba93ef3846f571ddb2965bf1ebc3584d54c5b8d09045d33], retrying...."
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.448464966+05:00" level=info msg="Loading containers: done."
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.473113444+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.473486655+05:00" level=info msg="Initializing buildkit"
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.479567119+05:00" level=info msg="Completed buildkit initialization"
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.482024910+05:00" level=info msg="Daemon has completed initialization"
+Sep 15 09:13:05 sanaan-linux dockerd[2367]: time="2025-09-15T09:13:05.482061661+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 15 09:13:05 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 131.
+Sep 15 10:50:30 sanaan-linux dockerd[2367]: time="2025-09-15T10:50:30.039684560+05:00" level=info msg="Processing signal 'terminated'"
+Sep 15 10:50:30 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 4096.
+Sep 15 10:50:30 sanaan-linux dockerd[2367]: time="2025-09-15T10:50:30.043881741+05:00" level=info msg="Daemon shutdown complete"
+Sep 15 10:50:30 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 15 10:50:30 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 4096 and the job result is done.
+Sep 15 10:50:30 sanaan-linux systemd[1]: docker.service: Consumed 1.014s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot ae522f2992284be9b1af533e4d52c598 --
+Sep 15 18:45:38 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 138.
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.535548553+05:00" level=info msg="Starting up"
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.537450247+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.538138589+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.538148963+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.538589635+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.590712665+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.628631373+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.642060450+05:00" level=info msg="Loading containers: start."
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.949485458+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count e774c35e2e2e75ba731caa93dd72812023388a102cc425009992a3c90b08599f], retrying...."
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.974479960+05:00" level=info msg="Loading containers: done."
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.990134403+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.990412230+05:00" level=info msg="Initializing buildkit"
+Sep 15 18:45:38 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:38.996886359+05:00" level=info msg="Completed buildkit initialization"
+Sep 15 18:45:39 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:39.000500946+05:00" level=info msg="Daemon has completed initialization"
+Sep 15 18:45:39 sanaan-linux dockerd[1425]: time="2025-09-15T18:45:39.000530537+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 15 18:45:39 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 138.
+Sep 15 19:22:21 sanaan-linux dockerd[1425]: time="2025-09-15T19:22:21.767730008+05:00" level=error msg="Not continuing with pull after error" error="errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+Sep 15 19:22:21 sanaan-linux dockerd[1425]: time="2025-09-15T19:22:21.767847662+05:00" level=info msg="Ignoring extra error returned from registry" error="unauthorized: authentication required"
+Sep 15 23:25:11 sanaan-linux dockerd[1425]: time="2025-09-15T23:25:11.573066237+05:00" level=info msg="ignoring event" container=b16a403f66e5bcede5c332cbbee15ba1a8f5eef58bde0a710d9a45454db19266 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 16 07:09:57 sanaan-linux dockerd[1425]: time="2025-09-16T07:09:57.687585672+05:00" level=info msg="Processing signal 'terminated'"
+Sep 16 07:09:57 sanaan-linux dockerd[1425]: time="2025-09-16T07:09:57.691993244+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 16 07:09:57 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 9930.
+Sep 16 07:09:57 sanaan-linux dockerd[1425]: time="2025-09-16T07:09:57.693832273+05:00" level=info msg="Daemon shutdown complete"
+Sep 16 07:09:57 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 16 07:09:57 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 9930 and the job result is done.
+Sep 16 07:09:57 sanaan-linux systemd[1]: docker.service: Consumed 7.856s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot 328f81e55a0646648217f1f05166eb38 --
+Sep 16 12:35:47 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 147.
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.538997701+05:00" level=info msg="Starting up"
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.541053279+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.541770377+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.541783317+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.542223165+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.590060007+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.634783254+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.649013583+05:00" level=info msg="Loading containers: start."
+Sep 16 12:35:47 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:47.984007240+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 864e1395dcd6b9bce41508d8a318bb4903ec478199258ba961e8e62de1c55e8e], retrying...."
+Sep 16 12:35:48 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:48.012643908+05:00" level=info msg="Loading containers: done."
+Sep 16 12:35:48 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:48.034800682+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 16 12:35:48 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:48.035089225+05:00" level=info msg="Initializing buildkit"
+Sep 16 12:35:48 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:48.042268607+05:00" level=info msg="Completed buildkit initialization"
+Sep 16 12:35:48 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:48.046284107+05:00" level=info msg="Daemon has completed initialization"
+Sep 16 12:35:48 sanaan-linux dockerd[1404]: time="2025-09-16T12:35:48.046321531+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 16 12:35:48 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 147.
+Sep 16 14:28:52 sanaan-linux dockerd[1404]: time="2025-09-16T14:28:52.298222072+05:00" level=info msg="Processing signal 'terminated'"
+Sep 16 14:28:52 sanaan-linux dockerd[1404]: time="2025-09-16T14:28:52.309242052+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 16 14:28:52 sanaan-linux dockerd[1404]: time="2025-09-16T14:28:52.310774681+05:00" level=info msg="Daemon shutdown complete"
+Sep 16 14:28:52 sanaan-linux dockerd[1404]: time="2025-09-16T14:28:52.310826338+05:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Sep 16 14:28:52 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6165.
+Sep 16 14:28:52 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 16 14:28:52 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6165 and the job result is done.
+Sep 16 14:28:52 sanaan-linux systemd[1]: docker.service: Consumed 1.142s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot 56c9309a2f844caf9168dfc280111cb6 --
+Sep 16 14:36:52 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 153.
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.384572996+05:00" level=info msg="Starting up"
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.386379006+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.386666884+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.386677026+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.387004003+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.433383058+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.494070488+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.508851597+05:00" level=info msg="Loading containers: start."
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.804537152+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 047e0c74c022a8d9135e6fcf314c2e690b9f5c994298bc6c664098cde9e0bd82], retrying...."
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.830131038+05:00" level=info msg="Loading containers: done."
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.845858966+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.846119508+05:00" level=info msg="Initializing buildkit"
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.852284350+05:00" level=info msg="Completed buildkit initialization"
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.854628188+05:00" level=info msg="Daemon has completed initialization"
+Sep 16 14:36:52 sanaan-linux dockerd[1480]: time="2025-09-16T14:36:52.854662233+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 16 14:36:52 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 153.
+Sep 16 14:43:33 sanaan-linux dockerd[1480]: time="2025-09-16T14:43:33.576443839+05:00" level=info msg="Processing signal 'terminated'"
+Sep 16 14:43:33 sanaan-linux dockerd[1480]: time="2025-09-16T14:43:33.585253666+05:00" level=info msg="Daemon shutdown complete"
+Sep 16 14:43:33 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 3379.
+Sep 16 14:43:33 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 16 14:43:33 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 3379 and the job result is done.
+-- Boot c7e5cfcfab45492a9418946adfbe9b35 --
+Sep 16 14:44:19 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 154.
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.196137443+05:00" level=info msg="Starting up"
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.197540192+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.198222236+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.198232678+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.198653243+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.244786844+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.304382941+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.319261154+05:00" level=info msg="Loading containers: start."
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.647953088+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count fc54c95ec297321b88642e7b85127aaed8b5bb7988f602bf22bae446d0fd80a5], retrying...."
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.672549019+05:00" level=info msg="Loading containers: done."
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.694214147+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.694492455+05:00" level=info msg="Initializing buildkit"
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.699817089+05:00" level=info msg="Completed buildkit initialization"
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.703478605+05:00" level=info msg="Daemon has completed initialization"
+Sep 16 14:44:19 sanaan-linux dockerd[1471]: time="2025-09-16T14:44:19.703510769+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 16 14:44:19 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 154.
+Sep 16 15:44:35 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 3227.
+Sep 16 15:44:35 sanaan-linux dockerd[1471]: time="2025-09-16T15:44:35.973286615+05:00" level=info msg="Processing signal 'terminated'"
+Sep 16 15:44:35 sanaan-linux dockerd[1471]: time="2025-09-16T15:44:35.974717622+05:00" level=info msg="Daemon shutdown complete"
+Sep 16 15:44:36 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 16 15:44:36 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 3227 and the job result is done.
+-- Boot 1992e4cacf7a4977add4f0d77cc1fa54 --
+Sep 16 22:25:50 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 161.
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.057162308+05:00" level=info msg="Starting up"
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.058965551+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.059633318+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.059642160+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.060064551+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.106259734+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.165573626+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.180697281+05:00" level=info msg="Loading containers: start."
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.476428410+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count adb17620356933411626fdd4ca0d13e87187b75924599cd68db87b33719a2467], retrying...."
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.506452847+05:00" level=info msg="Loading containers: done."
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.524041608+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.524311491+05:00" level=info msg="Initializing buildkit"
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.531374843+05:00" level=info msg="Completed buildkit initialization"
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.533854966+05:00" level=info msg="Daemon has completed initialization"
+Sep 16 22:25:51 sanaan-linux dockerd[1521]: time="2025-09-16T22:25:51.533898345+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 16 22:25:51 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 161.
+Sep 17 11:28:07 sanaan-linux dockerd[1521]: time="2025-09-17T11:28:07.157022800+05:00" level=info msg="Processing signal 'terminated'"
+Sep 17 11:28:07 sanaan-linux dockerd[1521]: time="2025-09-17T11:28:07.167985882+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 17 11:28:07 sanaan-linux dockerd[1521]: time="2025-09-17T11:28:07.172367147+05:00" level=info msg="Daemon shutdown complete"
+Sep 17 11:28:07 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6475.
+Sep 17 11:28:07 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 17 11:28:07 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6475 and the job result is done.
+Sep 17 11:28:07 sanaan-linux systemd[1]: docker.service: Consumed 2.162s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot 8d3286c362a044438fbab5a38751d60e --
+Sep 17 14:55:33 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 107.
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.109236857+05:00" level=info msg="Starting up"
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.111220587+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.111897550+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.111908529+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.112377956+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.160227709+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.196920230+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.214366771+05:00" level=info msg="Loading containers: start."
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.517570884+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count a51cf5b18dc6f647fb87e8d1e14e06860ba559ba6a4ceca9ebfdbedf4a301878], retrying...."
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.546875822+05:00" level=info msg="Loading containers: done."
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.565347321+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.565606376+05:00" level=info msg="Initializing buildkit"
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.571913992+05:00" level=info msg="Completed buildkit initialization"
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.575150521+05:00" level=info msg="Daemon has completed initialization"
+Sep 17 14:55:34 sanaan-linux dockerd[2219]: time="2025-09-17T14:55:34.575194907+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 17 14:55:34 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 107.
+-- Boot d18b1bd15e614f3394c588938a8ff5e7 --
+Sep 17 20:22:53 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 149.
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.094852763+05:00" level=info msg="Starting up"
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.096774676+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.097467576+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.097477731+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.097929683+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.145246091+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.198622602+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.214532576+05:00" level=info msg="Loading containers: start."
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.554953913+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count cf2d2cbad105a13697052dbfc88dda6ff0e9ac5b28f8299416fbe0c336e151ef], retrying...."
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.582094239+05:00" level=info msg="Loading containers: done."
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.607518498+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.607790217+05:00" level=info msg="Initializing buildkit"
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.613933648+05:00" level=info msg="Completed buildkit initialization"
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.617297903+05:00" level=info msg="Daemon has completed initialization"
+Sep 17 20:22:54 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 149.
+Sep 17 20:22:54 sanaan-linux dockerd[2312]: time="2025-09-17T20:22:54.617477237+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 18 02:22:35 sanaan-linux dockerd[2312]: time="2025-09-18T02:22:35.891797549+05:00" level=info msg="Processing signal 'terminated'"
+Sep 18 02:22:35 sanaan-linux dockerd[2312]: time="2025-09-18T02:22:35.900487020+05:00" level=info msg="Daemon shutdown complete"
+Sep 18 02:22:35 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 13110.
+Sep 18 02:22:36 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 18 02:22:36 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 13110 and the job result is done.
+Sep 18 02:22:36 sanaan-linux systemd[1]: docker.service: Consumed 3.421s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot 309802be5b2b452395fd3910744462a3 --
+Sep 18 07:35:39 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 109.
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.295168296+05:00" level=info msg="Starting up"
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.297163190+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.297811450+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.297822614+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.298249944+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.345141390+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.388034283+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.405918844+05:00" level=info msg="Loading containers: start."
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.721672990+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 90cbdb27921d9c086e19db2376cf91bb4e29d10032ceb4b152e24610d0968fa1], retrying...."
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.745948903+05:00" level=info msg="Loading containers: done."
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.766871100+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.767128451+05:00" level=info msg="Initializing buildkit"
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.773010451+05:00" level=info msg="Completed buildkit initialization"
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.776421042+05:00" level=info msg="Daemon has completed initialization"
+Sep 18 07:35:39 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 109.
+Sep 18 07:35:39 sanaan-linux dockerd[1417]: time="2025-09-18T07:35:39.776563539+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 18 08:08:54 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 4225.
+Sep 18 08:08:54 sanaan-linux dockerd[1417]: time="2025-09-18T08:08:54.676870872+05:00" level=info msg="Processing signal 'terminated'"
+Sep 18 08:08:54 sanaan-linux dockerd[1417]: time="2025-09-18T08:08:54.683330758+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 18 08:08:54 sanaan-linux dockerd[1417]: time="2025-09-18T08:08:54.683614828+05:00" level=info msg="Daemon shutdown complete"
+Sep 18 08:08:54 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 18 08:08:54 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 4225 and the job result is done.
+-- Boot bf941f5a397b4b5eb7497e755e85613d --
+Sep 18 10:06:18 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 119.
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.196389019+05:00" level=info msg="Starting up"
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.198321020+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.198970674+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.198986278+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.199427483+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.246084270+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.298124679+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.312025631+05:00" level=info msg="Loading containers: start."
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.649508402+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 203915d8d12b178fd3c075dd6a28fe013230abc19c3d47bb4117cabcccb50962], retrying...."
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.675579388+05:00" level=info msg="Loading containers: done."
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.693176714+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.693440178+05:00" level=info msg="Initializing buildkit"
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.699640982+05:00" level=info msg="Completed buildkit initialization"
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.702779485+05:00" level=info msg="Daemon has completed initialization"
+Sep 18 10:06:18 sanaan-linux dockerd[1449]: time="2025-09-18T10:06:18.702810693+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 18 10:06:18 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 119.
+-- Boot 8767c600ee15496eac0024aaec092071 --
+Sep 18 21:27:28 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 105.
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.092097565+05:00" level=info msg="Starting up"
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.094067274+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.094772951+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.094784031+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.095200739+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.142579982+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.195195484+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.210558556+05:00" level=info msg="Loading containers: start."
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.539556791+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count a2fe1cfd6f425293b408bae0e27a72a6ee8d8c3158246f787bf5d9d6f78d4150], retrying...."
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.564339891+05:00" level=info msg="Loading containers: done."
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.590240236+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.590534941+05:00" level=info msg="Initializing buildkit"
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.599054967+05:00" level=info msg="Completed buildkit initialization"
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.601574696+05:00" level=info msg="Daemon has completed initialization"
+Sep 18 21:27:29 sanaan-linux dockerd[1415]: time="2025-09-18T21:27:29.601604371+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 18 21:27:29 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 105.
+-- Boot 6a29e1b43d224c298e173536d8aea2f5 --
+Sep 19 01:33:44 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 123.
+Sep 19 01:33:44 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:44.828600019+05:00" level=info msg="Starting up"
+Sep 19 01:33:44 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:44.830633380+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 19 01:33:44 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:44.831305689+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 19 01:33:44 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:44.831317232+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 19 01:33:44 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:44.831801211+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 19 01:33:44 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:44.879060985+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 19 01:33:44 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:44.916661465+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 19 01:33:44 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:44.938021248+05:00" level=info msg="Loading containers: start."
+Sep 19 01:33:45 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:45.229939831+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 1695da9157ca09918495b768773100b90a5f69ca256f1e47bb44105193429d66], retrying...."
+Sep 19 01:33:45 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:45.261074343+05:00" level=info msg="Loading containers: done."
+Sep 19 01:33:45 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:45.283315892+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 19 01:33:45 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:45.283597041+05:00" level=info msg="Initializing buildkit"
+Sep 19 01:33:45 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:45.290052129+05:00" level=info msg="Completed buildkit initialization"
+Sep 19 01:33:45 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:45.293811087+05:00" level=info msg="Daemon has completed initialization"
+Sep 19 01:33:45 sanaan-linux dockerd[1488]: time="2025-09-19T01:33:45.293847189+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 19 01:33:45 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 123.
+-- Boot 980aa69a98b44e4e8fe7fef82f523e8a --
+Sep 19 01:59:08 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 139.
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.039638620+05:00" level=info msg="Starting up"
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.041210352+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.041657207+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.041667601+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.042066884+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.088541108+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.127826815+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.141610884+05:00" level=info msg="Loading containers: start."
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.418435000+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 53fa64558bca60efb56110ae501d6ed3374225c8a93e3022dfe9f4ae1309d741], retrying...."
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.443081851+05:00" level=info msg="Loading containers: done."
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.472959847+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.473231773+05:00" level=info msg="Initializing buildkit"
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.481822341+05:00" level=info msg="Completed buildkit initialization"
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.485585537+05:00" level=info msg="Daemon has completed initialization"
+Sep 19 01:59:09 sanaan-linux dockerd[1518]: time="2025-09-19T01:59:09.485673456+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 19 01:59:09 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 139.
+-- Boot a94615da48844a49b0c9e764fe777e5a --
+Sep 19 02:57:20 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 132.
+Sep 19 02:57:20 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:20.961108817+05:00" level=info msg="Starting up"
+Sep 19 02:57:20 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:20.962873144+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 19 02:57:20 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:20.963546359+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 19 02:57:20 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:20.963562904+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 19 02:57:20 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:20.964039535+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.011740955+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.053771281+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.069150899+05:00" level=info msg="Loading containers: start."
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.394912001+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 883d60a9127ebf143345ce9863212be79f7727651dc904dd000f2d05e7493e02], retrying...."
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.423398782+05:00" level=info msg="Loading containers: done."
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.447251639+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.447531438+05:00" level=info msg="Initializing buildkit"
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.452881869+05:00" level=info msg="Completed buildkit initialization"
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.456062958+05:00" level=info msg="Daemon has completed initialization"
+Sep 19 02:57:21 sanaan-linux dockerd[1518]: time="2025-09-19T02:57:21.456099926+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 19 02:57:21 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 132.
+Sep 19 04:34:00 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 3234.
+Sep 19 04:34:00 sanaan-linux dockerd[1518]: time="2025-09-19T04:34:00.120834041+05:00" level=info msg="Processing signal 'terminated'"
+Sep 19 04:34:00 sanaan-linux dockerd[1518]: time="2025-09-19T04:34:00.123015164+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 19 04:34:00 sanaan-linux dockerd[1518]: time="2025-09-19T04:34:00.123390069+05:00" level=info msg="Daemon shutdown complete"
+Sep 19 04:34:00 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 19 04:34:00 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 3234 and the job result is done.
+Sep 19 04:34:00 sanaan-linux systemd[1]: docker.service: Consumed 1.184s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot b91166deea224f3bb227cfc7b358d8e7 --
+Sep 19 04:43:17 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 128.
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.187624842+05:00" level=info msg="Starting up"
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.191347926+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.192321342+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.192356347+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.192958397+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.281369896+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.332682670+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.349937548+05:00" level=info msg="Loading containers: start."
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.768978103+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count e7222697cb1a8bf89d40817d24c9b0189c60b942f32a33dae012076f59342077], retrying...."
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.808467763+05:00" level=info msg="Loading containers: done."
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.828741414+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.829252201+05:00" level=info msg="Initializing buildkit"
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.836815882+05:00" level=info msg="Completed buildkit initialization"
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.842351504+05:00" level=info msg="Daemon has completed initialization"
+Sep 19 04:43:18 sanaan-linux dockerd[1556]: time="2025-09-19T04:43:18.842399437+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 19 04:43:18 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 128.
+Sep 19 04:53:29 sanaan-linux dockerd[1556]: time="2025-09-19T04:53:29.093578395+05:00" level=info msg="Processing signal 'terminated'"
+Sep 19 04:53:29 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 3462.
+Sep 19 04:53:29 sanaan-linux dockerd[1556]: time="2025-09-19T04:53:29.098089097+05:00" level=info msg="Daemon shutdown complete"
+Sep 19 04:53:29 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 19 04:53:29 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 3462 and the job result is done.
+-- Boot f5a5fc4eb6e04387a14fab3a73ebeb9a --
+Sep 19 14:42:28 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 118.
+Sep 19 14:42:28 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:28.988697656+05:00" level=info msg="Starting up"
+Sep 19 14:42:28 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:28.990496291+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 19 14:42:28 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:28.990967547+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 19 14:42:28 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:28.990976704+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 19 14:42:28 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:28.991399696+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.037826545+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.081133103+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.099415148+05:00" level=info msg="Loading containers: start."
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.385894507+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 56bbdc16cca70522c8e7010bb076de0063c1ef89fc1ea900fe2e44101d4b1df5], retrying...."
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.434253594+05:00" level=info msg="Loading containers: done."
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.452743816+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.453013028+05:00" level=info msg="Initializing buildkit"
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.459254236+05:00" level=info msg="Completed buildkit initialization"
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.462044666+05:00" level=info msg="Daemon has completed initialization"
+Sep 19 14:42:29 sanaan-linux dockerd[1534]: time="2025-09-19T14:42:29.462077362+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 19 14:42:29 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 118.
+Sep 19 23:49:28 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 13412.
+Sep 19 23:49:28 sanaan-linux dockerd[1534]: time="2025-09-19T23:49:28.976056448+05:00" level=info msg="Processing signal 'terminated'"
+Sep 19 23:49:28 sanaan-linux dockerd[1534]: time="2025-09-19T23:49:28.977293755+05:00" level=info msg="Daemon shutdown complete"
+Sep 19 23:49:29 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 19 23:49:29 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 13412 and the job result is done.
+Sep 19 23:49:29 sanaan-linux systemd[1]: docker.service: Consumed 4.263s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot 71028e6bc1fe4bb7a96c529d76a78074 --
+Sep 20 00:31:15 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 103.
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.319803731+05:00" level=info msg="Starting up"
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.321852203+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.322320866+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.322329833+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.322764969+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.368932403+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.410609782+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.429467072+05:00" level=info msg="Loading containers: start."
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.746376306+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count cb4c5a2ecd038f7f3b1ff7ae80011b1ccfa9aedea9d6263eb904eb8180537821], retrying...."
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.771594409+05:00" level=info msg="Loading containers: done."
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.788443102+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.788729585+05:00" level=info msg="Initializing buildkit"
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.794425367+05:00" level=info msg="Completed buildkit initialization"
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.798060865+05:00" level=info msg="Daemon has completed initialization"
+Sep 20 00:31:15 sanaan-linux dockerd[1571]: time="2025-09-20T00:31:15.798092406+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 20 00:31:15 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 103.
+Sep 20 00:55:37 sanaan-linux dockerd[1571]: time="2025-09-20T00:55:37.835237523+05:00" level=info msg="Processing signal 'terminated'"
+Sep 20 00:55:37 sanaan-linux dockerd[1571]: time="2025-09-20T00:55:37.838918854+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 00:55:37 sanaan-linux dockerd[1571]: time="2025-09-20T00:55:37.839517675+05:00" level=info msg="Daemon shutdown complete"
+Sep 20 00:55:37 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 3510.
+Sep 20 00:55:37 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 20 00:55:37 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 3510 and the job result is done.
+-- Boot 0fec505ae1b14d02ac979e46b78c08b9 --
+Sep 20 01:16:22 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 114.
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.139370279+05:00" level=info msg="Starting up"
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.141253104+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.141902243+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.141914289+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.142362848+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.189597066+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.238796991+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.254381387+05:00" level=info msg="Loading containers: start."
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.549505512+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count bf632ccaf9bcf06c0f2d1d1c2821d43be71b284ee42bf2c7ac32eda33d5f88e4], retrying...."
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.608929538+05:00" level=info msg="Loading containers: done."
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.631729909+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.632094950+05:00" level=info msg="Initializing buildkit"
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.640193293+05:00" level=info msg="Completed buildkit initialization"
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.642758678+05:00" level=info msg="Daemon has completed initialization"
+Sep 20 01:16:23 sanaan-linux dockerd[1504]: time="2025-09-20T01:16:23.642787601+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 20 01:16:23 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 114.
+-- Boot 4861d38711a84cd3a88aa63bff983ae8 --
+Sep 20 01:19:34 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 130.
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.496139293+05:00" level=info msg="Starting up"
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.497522390+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.498170705+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.498183591+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.498648405+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.545981558+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.596230396+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.608545740+05:00" level=info msg="Loading containers: start."
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.914916410+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count ad07a7edb669c8e20bb1f0e55cf6e33aabeda7471de86392c5f29bc07144ce4f], retrying...."
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.939497236+05:00" level=info msg="Loading containers: done."
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.967564173+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.967835582+05:00" level=info msg="Initializing buildkit"
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.974355213+05:00" level=info msg="Completed buildkit initialization"
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.977831040+05:00" level=info msg="Daemon has completed initialization"
+Sep 20 01:19:34 sanaan-linux dockerd[1472]: time="2025-09-20T01:19:34.977863760+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 20 01:19:34 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 130.
+Sep 20 03:31:41 sanaan-linux dockerd[1472]: time="2025-09-20T03:31:41.555362799+05:00" level=info msg="Processing signal 'terminated'"
+Sep 20 03:31:41 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6408.
+Sep 20 03:31:41 sanaan-linux dockerd[1472]: time="2025-09-20T03:31:41.563718216+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 03:31:41 sanaan-linux dockerd[1472]: time="2025-09-20T03:31:41.564352818+05:00" level=info msg="Daemon shutdown complete"
+Sep 20 03:31:41 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 20 03:31:41 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6408 and the job result is done.
+Sep 20 03:31:41 sanaan-linux systemd[1]: docker.service: Consumed 1.388s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+-- Boot 2e9a88831a7f4d0ab60f62eed94bce57 --
+Sep 20 15:50:52 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 162.
+Sep 20 15:50:52 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:52.833380761+05:00" level=info msg="Starting up"
+Sep 20 15:50:52 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:52.835119480+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 15:50:52 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:52.835759010+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 15:50:52 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:52.835769701+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 15:50:52 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:52.836240406+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 15:50:52 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:52.881978842+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 15:50:52 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:52.925338490+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 15:50:52 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:52.943613037+05:00" level=info msg="Loading containers: start."
+Sep 20 15:50:53 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:53.247003403+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 18083b248afc3281bb8f0bdc070db03988b770af28f0cfd7e376ce6d1e8dd19c], retrying...."
+Sep 20 15:50:53 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:53.275045415+05:00" level=info msg="Loading containers: done."
+Sep 20 15:50:53 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:53.294042224+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 20 15:50:53 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:53.294315492+05:00" level=info msg="Initializing buildkit"
+Sep 20 15:50:53 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:53.300627088+05:00" level=info msg="Completed buildkit initialization"
+Sep 20 15:50:53 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:53.303306278+05:00" level=info msg="Daemon has completed initialization"
+Sep 20 15:50:53 sanaan-linux dockerd[1410]: time="2025-09-20T15:50:53.303336285+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 20 15:50:53 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 162.
+Sep 20 18:10:35 sanaan-linux dockerd[1410]: time="2025-09-20T18:10:35.346525524+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 18:10:55 sanaan-linux dockerd[1410]: 2025/09/20 18:10:55 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Sep 20 18:11:21 sanaan-linux dockerd[1410]: time="2025-09-20T18:11:21.284048891+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 18:12:54 sanaan-linux dockerd[1410]: time="2025-09-20T18:12:54.751729983+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 18:12:54 sanaan-linux dockerd[1410]: time="2025-09-20T18:12:54.807639124+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 18:22:11 sanaan-linux dockerd[1410]: time="2025-09-20T18:22:11.626033812+05:00" level=error msg="Not continuing with pull after error" error="errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+Sep 20 18:22:11 sanaan-linux dockerd[1410]: time="2025-09-20T18:22:11.626182319+05:00" level=info msg="Ignoring extra error returned from registry" error="unauthorized: authentication required"
+Sep 20 18:28:58 sanaan-linux dockerd[1410]: time="2025-09-20T18:28:58.656915087+05:00" level=error msg="Not continuing with pull after error" error="errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+Sep 20 18:28:58 sanaan-linux dockerd[1410]: time="2025-09-20T18:28:58.656990563+05:00" level=info msg="Ignoring extra error returned from registry" error="unauthorized: authentication required"
+Sep 20 18:55:29 sanaan-linux dockerd[1410]: time="2025-09-20T18:55:29.736029177+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 18:56:13 sanaan-linux dockerd[1410]: 2025/09/20 18:56:13 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Sep 20 18:59:17 sanaan-linux dockerd[1410]: 2025/09/20 18:59:17 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Sep 20 18:59:18 sanaan-linux dockerd[1410]: time="2025-09-20T18:59:18.913487408+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 19:51:31 sanaan-linux dockerd[1410]: 2025/09/20 19:51:31 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+Sep 20 19:51:56 sanaan-linux dockerd[1410]: time="2025-09-20T19:51:56.219050346+05:00" level=warning msg="Failed to allocate and map port" eid=645402050b51d90b8eb6c6e3ae57a084cc6ec2e12e573dde2aa1e59c079ba5d0 ep=test-model-service error="Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 5000 -j DNAT --to-destination 172.17.0.2:5000 ! -i docker0: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))" net=bridge nid=eb834eb5e58055e58ddc4e2571e4b90792308f99c8b0ba0fdab2ca9e1f0bc265
+Sep 20 19:51:56 sanaan-linux dockerd[1410]: time="2025-09-20T19:51:56.254325999+05:00" level=info msg="ignoring event" container=b3ca266058f348605a89f1a02fdebf9c450b0f10620dde55909e1f8b6db7e8eb module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 20 19:51:56 sanaan-linux dockerd[1410]: time="2025-09-20T19:51:56.292361818+05:00" level=error msg="Handler for POST /v1.51/containers/b3ca266058f348605a89f1a02fdebf9c450b0f10620dde55909e1f8b6db7e8eb/start returned error: failed to set up container networking: driver failed programming external connectivity on endpoint test-model-service (645402050b51d90b8eb6c6e3ae57a084cc6ec2e12e573dde2aa1e59c079ba5d0): Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 5000 -j DNAT --to-destination 172.17.0.2:5000 ! -i docker0: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))"
+Sep 20 19:51:56 sanaan-linux dockerd[1410]: time="2025-09-20T19:51:56.876605072+05:00" level=warning msg="MAC address changed" eid=645402050b51d90b8eb6c6e3ae57a084cc6ec2e12e573dde2aa1e59c079ba5d0 ep=test-model-service iface=eth0 ifi=2 ip4=172.17.0.2/16 ip6="<nil>" mac="02:92:63:61:b1:5d" mcastRouteOk=true n=1 net=bridge newMAC="e0:70:ea:cc:0a:2b" nid=eb834eb5e58055e58ddc4e2571e4b90792308f99c8b0ba0fdab2ca9e1f0bc265
+Sep 20 19:53:39 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:39.396061118+05:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Sep 20 19:53:39 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:39.444891254+05:00" level=error msg="Resolver Start failed for container 1a109f45fb1440ca1196a9003ed494bf338aa54b00c9aaa7513ee57be5d69b49, \"setting up DNAT/SNAT rules failed: set up rule failed, [-t nat -I DOCKER_OUTPUT -d 127.0.0.11 -p udp --dport 53 -j DNAT --to-destination 127.0.0.11:44142]\""
+Sep 20 19:53:39 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:39.733746575+05:00" level=warning msg="Failed to allocate and map port" eid=7ecc323396a13c5a5794defdf882e4ca3ea15e0928604e7976786d029d22dad3 ep=ml-model error="Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 5000 -j DNAT --to-destination 172.19.0.2:5000 ! -i br-69f5c6fb41fd: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))" net=ml-network nid=69f5c6fb41fd241bb8ef7a440f45118b10d3b7691f4eb4ea4ce3a605feef91a7
+Sep 20 19:53:39 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:39.771461643+05:00" level=info msg="ignoring event" container=1a109f45fb1440ca1196a9003ed494bf338aa54b00c9aaa7513ee57be5d69b49 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 20 19:53:39 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:39.806985700+05:00" level=error msg="Handler for POST /v1.51/containers/1a109f45fb1440ca1196a9003ed494bf338aa54b00c9aaa7513ee57be5d69b49/start returned error: failed to set up container networking: driver failed programming external connectivity on endpoint ml-model (7ecc323396a13c5a5794defdf882e4ca3ea15e0928604e7976786d029d22dad3): Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 5000 -j DNAT --to-destination 172.19.0.2:5000 ! -i br-69f5c6fb41fd: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))"
+Sep 20 19:53:39 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:39.940735742+05:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Sep 20 19:53:39 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:39.984063518+05:00" level=error msg="Resolver Start failed for container edabca5250897ff013aaca52ee77d36f0a59da4f167076a7cfeba20038e73c5d, \"setting up DNAT/SNAT rules failed: set up rule failed, [-t nat -I DOCKER_OUTPUT -d 127.0.0.11 -p udp --dport 53 -j DNAT --to-destination 127.0.0.11:44911]\""
+Sep 20 19:53:40 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:40.309538273+05:00" level=warning msg="Failed to allocate and map port" eid=fe49ff8a9fa15b7fdbc6583c66fb4976b8393dc33ed542ee6ff50806f0916c88 ep=flask-api error="Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 8000 -j DNAT --to-destination 172.19.0.2:8000 ! -i br-69f5c6fb41fd: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))" net=ml-network nid=69f5c6fb41fd241bb8ef7a440f45118b10d3b7691f4eb4ea4ce3a605feef91a7
+Sep 20 19:53:40 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:40.354352934+05:00" level=info msg="ignoring event" container=edabca5250897ff013aaca52ee77d36f0a59da4f167076a7cfeba20038e73c5d module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 20 19:53:40 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:40.389240481+05:00" level=error msg="Handler for POST /v1.51/containers/edabca5250897ff013aaca52ee77d36f0a59da4f167076a7cfeba20038e73c5d/start returned error: failed to set up container networking: driver failed programming external connectivity on endpoint flask-api (fe49ff8a9fa15b7fdbc6583c66fb4976b8393dc33ed542ee6ff50806f0916c88): Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 8000 -j DNAT --to-destination 172.19.0.2:8000 ! -i br-69f5c6fb41fd: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))"
+Sep 20 19:53:40 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:40.448423810+05:00" level=warning msg="MAC address changed" eid=7ecc323396a13c5a5794defdf882e4ca3ea15e0928604e7976786d029d22dad3 ep=ml-model iface=eth0 ifi=2 ip4=172.19.0.2/16 ip6="<nil>" mac="0e:0a:e8:d6:0f:ab" mcastRouteOk=true n=1 net=ml-network newMAC="e0:70:ea:cc:0a:2b" nid=69f5c6fb41fd241bb8ef7a440f45118b10d3b7691f4eb4ea4ce3a605feef91a7
+Sep 20 19:53:40 sanaan-linux dockerd[1410]: time="2025-09-20T19:53:40.989629198+05:00" level=warning msg="MAC address changed" eid=fe49ff8a9fa15b7fdbc6583c66fb4976b8393dc33ed542ee6ff50806f0916c88 ep=flask-api iface=eth0 ifi=2 ip4=172.19.0.2/16 ip6="<nil>" mac="3a:25:29:34:e8:81" mcastRouteOk=true n=1 net=ml-network newMAC="e0:70:ea:cc:0a:2b" nid=69f5c6fb41fd241bb8ef7a440f45118b10d3b7691f4eb4ea4ce3a605feef91a7
+Sep 20 20:02:24 sanaan-linux dockerd[1410]: time="2025-09-20T20:02:24.801561188+05:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Sep 20 20:02:24 sanaan-linux dockerd[1410]: time="2025-09-20T20:02:24.838797436+05:00" level=error msg="Resolver Start failed for container f485192bc43bbd13f87d252f8b26c957ef152fbabe95f6e2f4df0e1c50b569fe, \"setting up DNAT/SNAT rules failed: set up rule failed, [-t nat -I DOCKER_OUTPUT -d 127.0.0.11 -p udp --dport 53 -j DNAT --to-destination 127.0.0.11:46231]\""
+Sep 20 20:02:25 sanaan-linux dockerd[1410]: time="2025-09-20T20:02:25.137807917+05:00" level=warning msg="Failed to allocate and map port" eid=e56498214f60ef7a4d71c400ef1d12bf28aaa7d24dca382510e95b11dca9bba0 ep=mlops_assignment01_ml-model_1 error="Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 5000 -j DNAT --to-destination 172.20.0.2:5000 ! -i br-48162408b02a: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))" net=mlops_assignment01_default nid=48162408b02a8184243cdc9f05fad2bc901cdaa335413af3fe5a4273b4f57b3e
+Sep 20 20:02:25 sanaan-linux dockerd[1410]: time="2025-09-20T20:02:25.186870556+05:00" level=info msg="ignoring event" container=f485192bc43bbd13f87d252f8b26c957ef152fbabe95f6e2f4df0e1c50b569fe module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 20 20:02:25 sanaan-linux dockerd[1410]: time="2025-09-20T20:02:25.216486732+05:00" level=error msg="Handler for POST /v1.51/containers/f485192bc43bbd13f87d252f8b26c957ef152fbabe95f6e2f4df0e1c50b569fe/start returned error: failed to set up container networking: driver failed programming external connectivity on endpoint mlops_assignment01_ml-model_1 (e56498214f60ef7a4d71c400ef1d12bf28aaa7d24dca382510e95b11dca9bba0): Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 5000 -j DNAT --to-destination 172.20.0.2:5000 ! -i br-48162408b02a: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))"
+Sep 20 20:02:25 sanaan-linux dockerd[1410]: time="2025-09-20T20:02:25.844668603+05:00" level=warning msg="MAC address changed" eid=e56498214f60ef7a4d71c400ef1d12bf28aaa7d24dca382510e95b11dca9bba0 ep=mlops_assignment01_ml-model_1 iface=eth0 ifi=2 ip4=172.20.0.2/16 ip6="<nil>" mac="b2:26:8b:94:a8:1a" mcastRouteOk=true n=1 net=mlops_assignment01_default newMAC="e0:70:ea:cc:0a:2b" nid=48162408b02a8184243cdc9f05fad2bc901cdaa335413af3fe5a4273b4f57b3e
+Sep 20 20:03:53 sanaan-linux dockerd[1410]: time="2025-09-20T20:03:53.364161940+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count 48162408b02a8184243cdc9f05fad2bc901cdaa335413af3fe5a4273b4f57b3e], retrying...."
+Sep 20 20:04:03 sanaan-linux dockerd[1410]: time="2025-09-20T20:04:03.264008658+05:00" level=info msg="Processing signal 'terminated'"
+Sep 20 20:04:03 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 5735.
+Sep 20 20:04:03 sanaan-linux dockerd[1410]: time="2025-09-20T20:04:03.265512602+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:04:03 sanaan-linux dockerd[1410]: time="2025-09-20T20:04:03.266101636+05:00" level=info msg="Daemon shutdown complete"
+Sep 20 20:04:03 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 20 20:04:03 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 5735 and the job result is done.
+Sep 20 20:04:03 sanaan-linux systemd[1]: docker.service: Consumed 14.745s CPU time.
+░░ Subject: Resources consumed by unit runtime
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service completed and consumed the indicated resources.
+Sep 20 20:04:03 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 5735.
+Sep 20 20:04:03 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:03.310637116+05:00" level=info msg="Starting up"
+Sep 20 20:04:03 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:03.310949342+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:04:03 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:03.311015443+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:04:03 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:03.311023857+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:04:03 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:03.311087376+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:04:03 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:03.316786467+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:04:03 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:03.356252792+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:04:03 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:03.357588510+05:00" level=info msg="Loading containers: start."
+Sep 20 20:04:04 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:04.176892757+05:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count eb834eb5e58055e58ddc4e2571e4b90792308f99c8b0ba0fdab2ca9e1f0bc265], retrying...."
+Sep 20 20:04:04 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:04.230657001+05:00" level=info msg="Loading containers: done."
+Sep 20 20:04:04 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:04.250205520+05:00" level=info msg="Docker daemon" commit=249d679 containerd-snapshotter=false storage-driver=overlay2 version=28.4.0
+Sep 20 20:04:04 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:04.250260135+05:00" level=info msg="Initializing buildkit"
+Sep 20 20:04:04 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:04.295768110+05:00" level=info msg="Completed buildkit initialization"
+Sep 20 20:04:04 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:04.299701714+05:00" level=info msg="Daemon has completed initialization"
+Sep 20 20:04:04 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:04.299754326+05:00" level=info msg="API listen on /run/docker.sock"
+Sep 20 20:04:04 sanaan-linux systemd[1]: Started Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has finished successfully
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished successfully.
+░░ 
+░░ The job identifier is 5735.
+Sep 20 20:04:23 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:23.692139056+05:00" level=info msg="No non-localhost DNS nameservers are left in resolv.conf. Using default external servers"
+Sep 20 20:04:23 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:23.745840463+05:00" level=error msg="Resolver Start failed for container ca022a8d65a926f4f87314d671081e8c4ab145f9ea996a8d6fc6892dcf41d30a, \"setting up DNAT/SNAT rules failed: set up rule failed, [-t nat -I DOCKER_OUTPUT -d 127.0.0.11 -p udp --dport 53 -j DNAT --to-destination 127.0.0.11:57250]\""
+Sep 20 20:04:24 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:24.031572182+05:00" level=warning msg="Failed to allocate and map port" eid=46671c21d33a30a59dfa412ea89f29188d68c706e0414207d98914469485b65b ep=mlops_assignment01_ml-model_1 error="Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 5000 -j DNAT --to-destination 172.20.0.2:5000 ! -i br-15569c240df6: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))" net=mlops_assignment01_default nid=15569c240df648c461ab4492e17918bf0eef5463a855e5588072bc1027dcda6a
+Sep 20 20:04:24 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:24.069238526+05:00" level=info msg="ignoring event" container=ca022a8d65a926f4f87314d671081e8c4ab145f9ea996a8d6fc6892dcf41d30a module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Sep 20 20:04:24 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:24.109429990+05:00" level=error msg="Handler for POST /v1.51/containers/ca022a8d65a926f4f87314d671081e8c4ab145f9ea996a8d6fc6892dcf41d30a/start returned error: failed to set up container networking: driver failed programming external connectivity on endpoint mlops_assignment01_ml-model_1 (46671c21d33a30a59dfa412ea89f29188d68c706e0414207d98914469485b65b): Unable to enable DNAT rule:  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 5000 -j DNAT --to-destination 172.20.0.2:5000 ! -i br-15569c240df6: iptables v1.8.7 (nf_tables): unknown option \"--dport\"\nTry `iptables -h' or 'iptables --help' for more information.\n (exit status 2))"
+Sep 20 20:04:24 sanaan-linux dockerd[47999]: time="2025-09-20T20:04:24.750682046+05:00" level=warning msg="MAC address changed" eid=46671c21d33a30a59dfa412ea89f29188d68c706e0414207d98914469485b65b ep=mlops_assignment01_ml-model_1 iface=eth0 ifi=2 ip4=172.20.0.2/16 ip6="<nil>" mac="5e:47:76:77:7e:81" mcastRouteOk=true n=1 net=mlops_assignment01_default newMAC="e0:70:ea:cc:0a:2b" nid=15569c240df648c461ab4492e17918bf0eef5463a855e5588072bc1027dcda6a
+Sep 20 20:05:29 sanaan-linux dockerd[47999]: time="2025-09-20T20:05:29.205645944+05:00" level=info msg="Processing signal 'terminated'"
+Sep 20 20:05:29 sanaan-linux systemd[1]: Stopping Docker Application Container Engine...
+░░ Subject: A stop job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6094.
+Sep 20 20:05:29 sanaan-linux dockerd[47999]: time="2025-09-20T20:05:29.206750363+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:05:29 sanaan-linux dockerd[47999]: time="2025-09-20T20:05:29.207185402+05:00" level=info msg="Daemon shutdown complete"
+Sep 20 20:05:29 sanaan-linux dockerd[47999]: time="2025-09-20T20:05:29.207225652+05:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Sep 20 20:05:29 sanaan-linux systemd[1]: docker.service: Deactivated successfully.
+░░ Subject: Unit succeeded
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has successfully entered the 'dead' state.
+Sep 20 20:05:29 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6094 and the job result is done.
+Sep 20 20:05:29 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6094.
+Sep 20 20:05:29 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:29.249327735+05:00" level=info msg="Starting up"
+Sep 20 20:05:29 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:29.249707289+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:05:29 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:29.249776628+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:05:29 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:29.249788691+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:05:29 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:29.249864372+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:05:29 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:29.256082265+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:05:29 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:29.285586497+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:05:29 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:29.286822606+05:00" level=info msg="Loading containers: start."
+Sep 20 20:05:31 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:31.004307183+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:05:31 sanaan-linux dockerd[48575]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:05:31 sanaan-linux dockerd[48575]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:05:31 sanaan-linux dockerd[48575]:  (exit status 3)
+Sep 20 20:05:31 sanaan-linux dockerd[48575]: time="2025-09-20T20:05:31.004809509+05:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Sep 20 20:05:31 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:05:31 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:05:31 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 6094 and the job result is failed.
+Sep 20 20:05:33 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:05:33 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6218 and the job result is done.
+Sep 20 20:05:33 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6218.
+Sep 20 20:05:33 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:33.266086213+05:00" level=info msg="Starting up"
+Sep 20 20:05:33 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:33.266551538+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:05:33 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:33.266669575+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:05:33 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:33.266688340+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:05:33 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:33.266796375+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:05:33 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:33.274720796+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:05:33 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:33.306516864+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:05:33 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:33.307895033+05:00" level=info msg="Loading containers: start."
+Sep 20 20:05:34 sanaan-linux dockerd[48673]: time="2025-09-20T20:05:34.839884445+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:05:34 sanaan-linux dockerd[48673]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:05:34 sanaan-linux dockerd[48673]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:05:34 sanaan-linux dockerd[48673]:  (exit status 3)
+Sep 20 20:05:34 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:05:34 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:05:34 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 6218 and the job result is failed.
+Sep 20 20:05:36 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:05:36 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6342 and the job result is done.
+Sep 20 20:05:36 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6342.
+Sep 20 20:05:37 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:37.021170793+05:00" level=info msg="Starting up"
+Sep 20 20:05:37 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:37.021621010+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:05:37 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:37.022395862+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:05:37 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:37.022412238+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:05:37 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:37.022485401+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:05:37 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:37.032455967+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:05:37 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:37.070750168+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:05:37 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:37.072042723+05:00" level=info msg="Loading containers: start."
+Sep 20 20:05:38 sanaan-linux dockerd[48770]: time="2025-09-20T20:05:38.737563984+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:05:38 sanaan-linux dockerd[48770]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:05:38 sanaan-linux dockerd[48770]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:05:38 sanaan-linux dockerd[48770]:  (exit status 3)
+Sep 20 20:05:38 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:05:38 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:05:38 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 6342 and the job result is failed.
+Sep 20 20:05:40 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:05:40 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6466 and the job result is done.
+Sep 20 20:05:40 sanaan-linux systemd[1]: docker.service: Start request repeated too quickly.
+Sep 20 20:05:40 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:05:40 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 6466 and the job result is failed.
+Sep 20 20:09:44 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6712.
+Sep 20 20:09:44 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:44.165936357+05:00" level=info msg="Starting up"
+Sep 20 20:09:44 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:44.166289367+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:09:44 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:44.166362608+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:09:44 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:44.166375187+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:09:44 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:44.166441444+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:09:44 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:44.172186630+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:09:44 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:44.194493441+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:09:44 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:44.196385812+05:00" level=info msg="Loading containers: start."
+Sep 20 20:09:45 sanaan-linux dockerd[49313]: time="2025-09-20T20:09:45.949343822+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:09:45 sanaan-linux dockerd[49313]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:09:45 sanaan-linux dockerd[49313]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:09:45 sanaan-linux dockerd[49313]:  (exit status 3)
+Sep 20 20:09:45 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:09:45 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:09:45 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 6712 and the job result is failed.
+Sep 20 20:09:47 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:09:47 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6836 and the job result is done.
+Sep 20 20:09:47 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6836.
+Sep 20 20:09:48 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:48.023099300+05:00" level=info msg="Starting up"
+Sep 20 20:09:48 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:48.023544464+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:09:48 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:48.023625857+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:09:48 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:48.023641942+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:09:48 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:48.023729366+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:09:48 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:48.031568100+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:09:48 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:48.059974086+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:09:48 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:48.061270142+05:00" level=info msg="Loading containers: start."
+Sep 20 20:09:49 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:49.814280554+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:09:49 sanaan-linux dockerd[49413]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:09:49 sanaan-linux dockerd[49413]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:09:49 sanaan-linux dockerd[49413]:  (exit status 3)
+Sep 20 20:09:49 sanaan-linux dockerd[49413]: time="2025-09-20T20:09:49.814918026+05:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Sep 20 20:09:49 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:09:49 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:09:49 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 6836 and the job result is failed.
+Sep 20 20:09:51 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:09:51 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 6960 and the job result is done.
+Sep 20 20:09:51 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 6960.
+Sep 20 20:09:52 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:52.017708298+05:00" level=info msg="Starting up"
+Sep 20 20:09:52 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:52.018009776+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:09:52 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:52.018056260+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:09:52 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:52.018063315+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:09:52 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:52.018123333+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:09:52 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:52.024501058+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:09:52 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:52.065050147+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:09:52 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:52.066973888+05:00" level=info msg="Loading containers: start."
+Sep 20 20:09:53 sanaan-linux dockerd[49517]: time="2025-09-20T20:09:53.795821753+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:09:53 sanaan-linux dockerd[49517]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:09:53 sanaan-linux dockerd[49517]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:09:53 sanaan-linux dockerd[49517]:  (exit status 3)
+Sep 20 20:09:53 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:09:53 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:09:53 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 6960 and the job result is failed.
+Sep 20 20:09:55 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:09:55 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 7084 and the job result is done.
+Sep 20 20:09:55 sanaan-linux systemd[1]: docker.service: Start request repeated too quickly.
+Sep 20 20:09:55 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:09:55 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 7084 and the job result is failed.
+Sep 20 20:12:46 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 7208.
+Sep 20 20:12:46 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:46.193331259+05:00" level=info msg="Starting up"
+Sep 20 20:12:46 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:46.193673362+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:12:46 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:46.193721943+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:12:46 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:46.193730732+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:12:46 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:46.193804771+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:12:46 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:46.200100144+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:12:46 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:46.218917164+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:12:46 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:46.220205121+05:00" level=info msg="Loading containers: start."
+Sep 20 20:12:47 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:47.994278851+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:12:47 sanaan-linux dockerd[49770]: time="2025-09-20T20:12:47.995225108+05:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Sep 20 20:12:47 sanaan-linux dockerd[49770]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:12:47 sanaan-linux dockerd[49770]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:12:47 sanaan-linux dockerd[49770]:  (exit status 3)
+Sep 20 20:12:48 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:12:48 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:12:48 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 7208 and the job result is failed.
+Sep 20 20:12:50 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:12:50 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 7332 and the job result is done.
+Sep 20 20:12:50 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 7332.
+Sep 20 20:12:50 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:50.252894771+05:00" level=info msg="Starting up"
+Sep 20 20:12:50 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:50.253207290+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:12:50 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:50.253267559+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:12:50 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:50.253275390+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:12:50 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:50.253330455+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:12:50 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:50.259442797+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:12:50 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:50.302070556+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:12:50 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:50.305413822+05:00" level=info msg="Loading containers: start."
+Sep 20 20:12:52 sanaan-linux dockerd[49868]: time="2025-09-20T20:12:52.054210382+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:12:52 sanaan-linux dockerd[49868]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:12:52 sanaan-linux dockerd[49868]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:12:52 sanaan-linux dockerd[49868]:  (exit status 3)
+Sep 20 20:12:52 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:12:52 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:12:52 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 7332 and the job result is failed.
+Sep 20 20:12:54 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:12:54 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 7456 and the job result is done.
+Sep 20 20:12:54 sanaan-linux systemd[1]: Starting Docker Application Container Engine...
+░░ Subject: A start job for unit docker.service has begun execution
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has begun execution.
+░░ 
+░░ The job identifier is 7456.
+Sep 20 20:12:54 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:54.267212247+05:00" level=info msg="Starting up"
+Sep 20 20:12:54 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:54.267773669+05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Sep 20 20:12:54 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:54.267884836+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Sep 20 20:12:54 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:54.267896069+05:00" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Sep 20 20:12:54 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:54.267989115+05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Sep 20 20:12:54 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:54.274826788+05:00" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Sep 20 20:12:54 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:54.308428440+05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Sep 20 20:12:54 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:54.309719733+05:00" level=info msg="Loading containers: start."
+Sep 20 20:12:55 sanaan-linux dockerd[49965]: time="2025-09-20T20:12:55.990038455+05:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Sep 20 20:12:55 sanaan-linux dockerd[49965]: failed to start daemon: Error initializing network controller: error obtaining controller instance: failed to register "bridge" driver: failed to create NAT chain DOCKER: iptables failed: iptables --wait -t nat -N DOCKER: iptables v1.8.7 (legacy): can't initialize iptables table `nat': Table does not exist (do you need to insmod?)
+Sep 20 20:12:55 sanaan-linux dockerd[49965]: Perhaps iptables or your kernel needs to be upgraded.
+Sep 20 20:12:55 sanaan-linux dockerd[49965]:  (exit status 3)
+Sep 20 20:12:55 sanaan-linux systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Sep 20 20:12:55 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:12:55 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 7456 and the job result is failed.
+Sep 20 20:12:58 sanaan-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit docker.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Sep 20 20:12:58 sanaan-linux systemd[1]: Stopped Docker Application Container Engine.
+░░ Subject: A stop job for unit docker.service has finished
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A stop job for unit docker.service has finished.
+░░ 
+░░ The job identifier is 7580 and the job result is done.
+Sep 20 20:12:58 sanaan-linux systemd[1]: docker.service: Start request repeated too quickly.
+Sep 20 20:12:58 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:12:58 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 7580 and the job result is failed.
+Sep 20 20:13:39 sanaan-linux systemd[1]: docker.service: Start request repeated too quickly.
+Sep 20 20:13:39 sanaan-linux systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+Sep 20 20:13:39 sanaan-linux systemd[1]: Failed to start Docker Application Container Engine.
+░░ Subject: A start job for unit docker.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit docker.service has finished with a failure.
+░░ 
+░░ The job identifier is 7704 and the job result is failed.

@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.10-slim
 
 WORKDIR /app
 
@@ -20,4 +20,4 @@ USER app
 
 EXPOSE 5000
 
-CMD [python, src/model/model_service.py]
+CMD ["python3", "src/model/model_service.py"]
