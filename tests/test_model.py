@@ -1,7 +1,5 @@
 import numpy as np
 import pandas as pd
-import pytest
-
 from src.model.train import AcademicStressPredictor
 
 
@@ -9,7 +7,7 @@ def test_model_initialization():
     """Test that model initializes correctly"""
     model = AcademicStressPredictor()
     assert model is not None
-    assert model.is_trained == False
+    assert model.is_trained is False
 
 
 def test_data_generation():
@@ -27,7 +25,7 @@ def test_model_training():
     """Test model training functionality"""
     model = AcademicStressPredictor()
     metrics = model.train()
-    assert model.is_trained == True
+    assert model.is_trained is True
     assert "train_accuracy" in metrics
     assert "test_accuracy" in metrics
     assert 0 <= metrics["train_accuracy"] <= 1
@@ -71,5 +69,5 @@ def test_model_save_load():
     new_model = AcademicStressPredictor()
     new_model.load_model("models/test_model.pkl")
 
-    assert new_model.is_trained == True
+    assert new_model.is_trained is True
     assert len(new_model.feature_columns) > 0
