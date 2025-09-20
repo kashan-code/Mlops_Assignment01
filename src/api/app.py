@@ -271,7 +271,6 @@ HTML_TEMPLATE = """
 </html>
 """
 
-
 @app.route("/health")
 def health():
     """Health check endpoint"""
