@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  ml-model:
+    image: ${DOCKER_HUB_REPO:-sanaanazfar742004}/mlops-asign1-model:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - MODEL_PATH=/app/models/academic_stress_model.pkl
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    
+  flask-api:
+    image: ${DOCKER_HUB_REPO:-sanaanazfar742004}/mlops-asign1-api:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_SERVICE_URL=http://ml-model:5000
+    depends_on:
+      - ml-model
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
